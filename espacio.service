@@ -1,0 +1,11 @@
+[Unit]
+Description=Servicio para verificar espacio ocupado en partición raíz
+After=network.target
+
+[Service]
+ExecStart=/bin/python3 /home/ivan/Escritorio/tarea5.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
